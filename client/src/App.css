@@ -53,6 +53,73 @@ body{
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: black;
   opacity: 1; /* Firefox */
+}
+
+.chatContainer{
+  width: 600px;
+  height: 350px;
+  border: 5px solid #454545;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainer .messages{
+  flex: 80%;
+  width: 100%;
+}
+
+.chatContainer .messagesInputs{
+  flex: 20%;
+  width: 100%;
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: row;
+}
+
+.chatContainer .messagesInputs input{
+  flex: 80%;
+  height: calc(100% - 5px);
+  border: none;
+  border-top: 5px solid #454545;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.chatContainer .messagesInputs button{
+  flex: 20%;
+  height: 100%;
+  background-color: #454545;
+  border: none;
+  color: wheat;
+  font-size: 18px;
+}
+
+.messageContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.messageContainer h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+
+}
+
+.messageIndividual{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background-color: yellowgreen;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  margin-right: 10px;
 }
